@@ -13,6 +13,11 @@ class ViewController: NSViewController {
     
     @IBOutlet weak var table: NSTableView!
     
+    @IBOutlet weak var blankTotal: NSTextField!
+    @IBOutlet weak var notesTotal: NSTextField!
+    @IBOutlet weak var codedTotal: NSTextField!
+    @IBOutlet weak var totalTotal: NSTextField!
+    
     @IBAction func repath(_ sender: Any) {
         guard let url = rootButton.url else { return }
         campaign = Campaign(root: url)
@@ -39,6 +44,11 @@ class ViewController: NSViewController {
 
         rootButton.url = campaign.root
         table.reloadData()
+        
+        blankTotal.integerValue = campaign.total.blank
+        notesTotal.integerValue = campaign.total.notes
+        codedTotal.integerValue = campaign.total.coded
+        totalTotal.integerValue = campaign.total.total
     }
 
 

@@ -13,6 +13,8 @@ class Campaign {
     var root: URL
     
     var tallys = [Read]()
+    var total = Read()
+    
     
     init(root: URL) {
         self.root = root
@@ -35,6 +37,7 @@ class Campaign {
              read(root)
         }
         
+        total = tallys.reduce(Read(), +)
     }
     
     var extentions: [String] {
