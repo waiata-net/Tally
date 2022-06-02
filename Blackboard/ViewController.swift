@@ -13,6 +13,7 @@ class ViewController: NSViewController {
     
     @IBOutlet weak var table: NSTableView!
     
+    @IBOutlet weak var countTotal: NSTextField!
     @IBOutlet weak var blankTotal: NSTextField!
     @IBOutlet weak var notesTotal: NSTextField!
     @IBOutlet weak var codedTotal: NSTextField!
@@ -45,6 +46,7 @@ class ViewController: NSViewController {
         rootButton.url = campaign.root
         table.reloadData()
         
+        countTotal.integerValue = campaign.total.count
         blankTotal.integerValue = campaign.total.blank
         notesTotal.integerValue = campaign.total.notes
         codedTotal.integerValue = campaign.total.coded
@@ -65,6 +67,7 @@ extension ViewController: NSTableViewDelegate, NSTableViewDataSource {
         guard let tally = campaign?.tallys[row] else { return nil }
         switch tableColumn?.identifier {
         case UI.Column.ext : return cell(ext: tally.ext)
+        case UI.Column.count : return cell(tot: tally.count)
         case UI.Column.blank : return cell(tot: tally.blank)
         case UI.Column.notes : return cell(tot: tally.notes)
         case UI.Column.coded : return cell(tot: tally.coded)
@@ -94,6 +97,7 @@ extension ViewController: NSTableViewDelegate, NSTableViewDataSource {
     struct UI {
         struct Column {
             static let ext = NSUserInterfaceItemIdentifier("Ext Column")
+            static let count = NSUserInterfaceItemIdentifier("Count Column")
             static let blank = NSUserInterfaceItemIdentifier("Blank Column")
             static let notes = NSUserInterfaceItemIdentifier("Notes Column")
             static let coded = NSUserInterfaceItemIdentifier("Coded Column")

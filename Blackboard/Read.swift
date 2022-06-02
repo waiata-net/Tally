@@ -16,6 +16,7 @@ struct Read {
     var coded = 0
     var notes = 0
     var total = 0
+    var count = 1
     
     init() {
     }
@@ -49,6 +50,7 @@ struct Read {
         r.coded = a.coded + b.coded
         r.notes = a.notes + b.notes
         r.total = a.total + b.total
+        r.count = a.count + b.count
         return r
     }
     
