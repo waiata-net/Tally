@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UniformTypeIdentifiers
 
 
 struct Read {
@@ -21,6 +22,22 @@ struct Read {
     
     init(url: URL) {
         ext = url.pathExtension
+        read(url: url)
+    }
+    
+    mutating func read(url: URL) {
+        guard let id = try? url.resourceValues(forKeys: [.typeIdentifierKey]).typeIdentifier,
+              let ut = UTType(id),
+              ut.conforms(to: .text),
+              let data = try? String(contentsOfFile: url.path)
+        else { return }
+        let lines = data.components(separatedBy: .newlines).map{ $0.trimmingCharacters(in: .whitespaces)}
+        for line in lines {
+            if line.isEmpty { blank += 1 }
+            else if line.hasPrefix("//") { notes += 1 }
+            else { coded += 1 }
+        }
+        total = lines.count
     }
     
     static func +(a: Read, b: Read?) -> Read {

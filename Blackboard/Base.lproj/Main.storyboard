@@ -718,7 +718,7 @@
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="directoriesAllowed" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="filesAllowed" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="filesAllowed" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="repath:" target="XfG-lQ-9wD" id="UG1-KG-g0u"/>
@@ -866,7 +866,7 @@
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
-                                                <tableColumn identifier="Total COlumn" width="82" minWidth="10" maxWidth="3.4028234663852886e+38" id="sEc-5L-F0G">
+                                                <tableColumn identifier="Total Column" width="82" minWidth="10" maxWidth="3.4028234663852886e+38" id="sEc-5L-F0G">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Total">
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

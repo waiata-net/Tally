@@ -55,7 +55,7 @@ extension ViewController: NSTableViewDelegate, NSTableViewDataSource {
         guard let tally = campaign?.tallys[row] else { return nil }
         switch tableColumn?.identifier {
         case UI.Column.ext : return cell(ext: tally.ext)
-        case UI.Column.blank : return cell(tot: tally.total)
+        case UI.Column.blank : return cell(tot: tally.blank)
         case UI.Column.notes : return cell(tot: tally.notes)
         case UI.Column.coded : return cell(tot: tally.coded)
         case UI.Column.total : return cell(tot: tally.total)
