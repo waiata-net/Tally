@@ -1,13 +1,13 @@
 //
-//  BlackboardUITests.swift
-//  BlackboardUITests
+//  TallyUITests.swift
+//  TallyUITests
 //
 //  Created by Neal Watkins on 2022/6/2.
 //
 
 import XCTest
 
-class BlackboardUITests: XCTestCase {
+class TallyUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

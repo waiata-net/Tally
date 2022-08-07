@@ -38,15 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08D6C5082848A87A004E1667 /* Blackboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blackboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08D6C5082848A87A004E1667 /* Tally.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tally.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08D6C50B2848A87A004E1667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08D6C50D2848A87A004E1667 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		08D6C50F2848A87D004E1667 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08D6C5122848A87D004E1667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		08D6C5142848A87D004E1667 /* Blackboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Blackboard.entitlements; sourceTree = "<group>"; };
-		08D6C5192848A87D004E1667 /* BlackboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08D6C5142848A87D004E1667 /* Tally.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tally.entitlements; sourceTree = "<group>"; };
+		08D6C5192848A87D004E1667 /* TallyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TallyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08D6C51D2848A87D004E1667 /* BlackboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackboardTests.swift; sourceTree = "<group>"; };
-		08D6C5232848A87D004E1667 /* BlackboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08D6C5232848A87D004E1667 /* TallyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TallyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08D6C5272848A87D004E1667 /* BlackboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackboardUITests.swift; sourceTree = "<group>"; };
 		08D6C5292848A87D004E1667 /* BlackboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		08D6C5362848A94F004E1667 /* Campaign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
@@ -83,9 +83,9 @@
 		08D6C4FF2848A87A004E1667 = {
 			isa = PBXGroup;
 			children = (
-				08D6C50A2848A87A004E1667 /* Blackboard */,
-				08D6C51C2848A87D004E1667 /* BlackboardTests */,
-				08D6C5262848A87D004E1667 /* BlackboardUITests */,
+				08D6C50A2848A87A004E1667 /* Tally */,
+				08D6C51C2848A87D004E1667 /* TallyTests */,
+				08D6C5262848A87D004E1667 /* TallyUITests */,
 				08D6C5092848A87A004E1667 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,14 +93,14 @@
 		08D6C5092848A87A004E1667 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				08D6C5082848A87A004E1667 /* Blackboard.app */,
-				08D6C5192848A87D004E1667 /* BlackboardTests.xctest */,
-				08D6C5232848A87D004E1667 /* BlackboardUITests.xctest */,
+				08D6C5082848A87A004E1667 /* Tally.app */,
+				08D6C5192848A87D004E1667 /* TallyTests.xctest */,
+				08D6C5232848A87D004E1667 /* TallyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		08D6C50A2848A87A004E1667 /* Blackboard */ = {
+		08D6C50A2848A87A004E1667 /* Tally */ = {
 			isa = PBXGroup;
 			children = (
 				08D6C50B2848A87A004E1667 /* AppDelegate.swift */,
@@ -111,34 +111,34 @@
 				08D6C53A2848B2E7004E1667 /* URL.swift */,
 				08D6C50F2848A87D004E1667 /* Assets.xcassets */,
 				08D6C5112848A87D004E1667 /* Main.storyboard */,
-				08D6C5142848A87D004E1667 /* Blackboard.entitlements */,
+				08D6C5142848A87D004E1667 /* Tally.entitlements */,
 			);
-			path = Blackboard;
+			path = Tally;
 			sourceTree = "<group>";
 		};
-		08D6C51C2848A87D004E1667 /* BlackboardTests */ = {
+		08D6C51C2848A87D004E1667 /* TallyTests */ = {
 			isa = PBXGroup;
 			children = (
 				08D6C51D2848A87D004E1667 /* BlackboardTests.swift */,
 			);
-			path = BlackboardTests;
+			path = TallyTests;
 			sourceTree = "<group>";
 		};
-		08D6C5262848A87D004E1667 /* BlackboardUITests */ = {
+		08D6C5262848A87D004E1667 /* TallyUITests */ = {
 			isa = PBXGroup;
 			children = (
 				08D6C5272848A87D004E1667 /* BlackboardUITests.swift */,
 				08D6C5292848A87D004E1667 /* BlackboardUITestsLaunchTests.swift */,
 			);
-			path = BlackboardUITests;
+			path = TallyUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		08D6C5072848A87A004E1667 /* Blackboard */ = {
+		08D6C5072848A87A004E1667 /* Tally */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 08D6C52D2848A87D004E1667 /* Build configuration list for PBXNativeTarget "Blackboard" */;
+			buildConfigurationList = 08D6C52D2848A87D004E1667 /* Build configuration list for PBXNativeTarget "Tally" */;
 			buildPhases = (
 				08D6C5042848A87A004E1667 /* Sources */,
 				08D6C5052848A87A004E1667 /* Frameworks */,
@@ -148,14 +148,14 @@
 			);
 			dependencies = (
 			);
-			name = Blackboard;
+			name = Tally;
 			productName = Blackboard;
-			productReference = 08D6C5082848A87A004E1667 /* Blackboard.app */;
+			productReference = 08D6C5082848A87A004E1667 /* Tally.app */;
 			productType = "com.apple.product-type.application";
 		};
-		08D6C5182848A87D004E1667 /* BlackboardTests */ = {
+		08D6C5182848A87D004E1667 /* TallyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 08D6C5302848A87D004E1667 /* Build configuration list for PBXNativeTarget "BlackboardTests" */;
+			buildConfigurationList = 08D6C5302848A87D004E1667 /* Build configuration list for PBXNativeTarget "TallyTests" */;
 			buildPhases = (
 				08D6C5152848A87D004E1667 /* Sources */,
 				08D6C5162848A87D004E1667 /* Frameworks */,
@@ -166,14 +166,14 @@
 			dependencies = (
 				08D6C51B2848A87D004E1667 /* PBXTargetDependency */,
 			);
-			name = BlackboardTests;
+			name = TallyTests;
 			productName = BlackboardTests;
-			productReference = 08D6C5192848A87D004E1667 /* BlackboardTests.xctest */;
+			productReference = 08D6C5192848A87D004E1667 /* TallyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		08D6C5222848A87D004E1667 /* BlackboardUITests */ = {
+		08D6C5222848A87D004E1667 /* TallyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 08D6C5332848A87D004E1667 /* Build configuration list for PBXNativeTarget "BlackboardUITests" */;
+			buildConfigurationList = 08D6C5332848A87D004E1667 /* Build configuration list for PBXNativeTarget "TallyUITests" */;
 			buildPhases = (
 				08D6C51F2848A87D004E1667 /* Sources */,
 				08D6C5202848A87D004E1667 /* Frameworks */,
@@ -184,9 +184,9 @@
 			dependencies = (
 				08D6C5252848A87D004E1667 /* PBXTargetDependency */,
 			);
-			name = BlackboardUITests;
+			name = TallyUITests;
 			productName = BlackboardUITests;
-			productReference = 08D6C5232848A87D004E1667 /* BlackboardUITests.xctest */;
+			productReference = 08D6C5232848A87D004E1667 /* TallyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -212,7 +212,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 08D6C5032848A87A004E1667 /* Build configuration list for PBXProject "Blackboard" */;
+			buildConfigurationList = 08D6C5032848A87A004E1667 /* Build configuration list for PBXProject "Tally" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -225,9 +225,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				08D6C5072848A87A004E1667 /* Blackboard */,
-				08D6C5182848A87D004E1667 /* BlackboardTests */,
-				08D6C5222848A87D004E1667 /* BlackboardUITests */,
+				08D6C5072848A87A004E1667 /* Tally */,
+				08D6C5182848A87D004E1667 /* TallyTests */,
+				08D6C5222848A87D004E1667 /* TallyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -294,12 +294,12 @@
 /* Begin PBXTargetDependency section */
 		08D6C51B2848A87D004E1667 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 08D6C5072848A87A004E1667 /* Blackboard */;
+			target = 08D6C5072848A87A004E1667 /* Tally */;
 			targetProxy = 08D6C51A2848A87D004E1667 /* PBXContainerItemProxy */;
 		};
 		08D6C5252848A87D004E1667 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 08D6C5072848A87A004E1667 /* Blackboard */;
+			target = 08D6C5072848A87A004E1667 /* Tally */;
 			targetProxy = 08D6C5242848A87D004E1667 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -432,9 +432,10 @@
 		08D6C52E2848A87D004E1667 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Tally;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Blackboard/Blackboard.entitlements;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = Tally/Tally.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -449,7 +450,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.waiata.Blackboard;
+				PRODUCT_BUNDLE_IDENTIFIER = net.waiata.Tally;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -459,9 +460,10 @@
 		08D6C52F2848A87D004E1667 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Tally;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Blackboard/Blackboard.entitlements;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = Tally/Tally.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -476,7 +478,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.waiata.Blackboard;
+				PRODUCT_BUNDLE_IDENTIFIER = net.waiata.Tally;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -494,11 +496,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.waiata.BlackboardTests;
+				PRODUCT_BUNDLE_IDENTIFIER = net.waiata.TallyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blackboard.app/Contents/MacOS/Blackboard";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tally.app/Contents/MacOS/Tally";
 			};
 			name = Debug;
 		};
@@ -513,11 +515,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.waiata.BlackboardTests;
+				PRODUCT_BUNDLE_IDENTIFIER = net.waiata.TallyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blackboard.app/Contents/MacOS/Blackboard";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tally.app/Contents/MacOS/Tally";
 			};
 			name = Release;
 		};
@@ -530,11 +532,11 @@
 				DEVELOPMENT_TEAM = J8YJLAG3D5;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.waiata.BlackboardUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = net.waiata.TallyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = Blackboard;
+				TEST_TARGET_NAME = Tally;
 			};
 			name = Debug;
 		};
@@ -547,18 +549,18 @@
 				DEVELOPMENT_TEAM = J8YJLAG3D5;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.waiata.BlackboardUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = net.waiata.TallyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = Blackboard;
+				TEST_TARGET_NAME = Tally;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		08D6C5032848A87A004E1667 /* Build configuration list for PBXProject "Blackboard" */ = {
+		08D6C5032848A87A004E1667 /* Build configuration list for PBXProject "Tally" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				08D6C52B2848A87D004E1667 /* Debug */,
@@ -567,7 +569,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		08D6C52D2848A87D004E1667 /* Build configuration list for PBXNativeTarget "Blackboard" */ = {
+		08D6C52D2848A87D004E1667 /* Build configuration list for PBXNativeTarget "Tally" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				08D6C52E2848A87D004E1667 /* Debug */,
@@ -576,7 +578,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		08D6C5302848A87D004E1667 /* Build configuration list for PBXNativeTarget "BlackboardTests" */ = {
+		08D6C5302848A87D004E1667 /* Build configuration list for PBXNativeTarget "TallyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				08D6C5312848A87D004E1667 /* Debug */,
@@ -585,7 +587,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		08D6C5332848A87D004E1667 /* Build configuration list for PBXNativeTarget "BlackboardUITests" */ = {
+		08D6C5332848A87D004E1667 /* Build configuration list for PBXNativeTarget "TallyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				08D6C5342848A87D004E1667 /* Debug */,
