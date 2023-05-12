@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TallyTable: View {
     
-    @ObservedObject var campaign: Campaign
+    @EnvironmentObject var campaign: Campaign
     
     @State private var sorter = [KeyPathComparator(\Read.ext)]
     @State private var filter = Filter.all
@@ -38,6 +38,11 @@ struct TallyTable: View {
                     ForEach(Filter.allCases, id: \.self) { filter in
                         Text(filter.rawValue.localizedCapitalized).tag(filter)
                     }
+                }
+                Button{
+                    campaign.run()
+                } label: {
+                    Image(systemName: "arrow.clockwise")
                 }
             }
             Table(tallys, sortOrder: $sorter) {
@@ -84,7 +89,8 @@ struct TallyTable: View {
 struct TallyTable_Previews: PreviewProvider {
     @State static var sample = Sample.campaign
     static var previews: some View {
-        TallyTable(campaign: sample)
+        TallyTable()
+            .environmentObject(sample)
     }
 }
 

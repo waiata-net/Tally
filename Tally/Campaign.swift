@@ -5,7 +5,7 @@
 //  Created by Neal Watkins on 2022/6/2.
 //
 
-import Foundation
+import AppKit
 
 
 class Campaign: ObservableObject {
@@ -13,7 +13,7 @@ class Campaign: ObservableObject {
     var urls = [URL]()
     
     @Published var total = Read()
-    var tallys = [Read]()
+    @Published var tallys = [Read]()
     
     let fm = FileManager()
     
@@ -42,6 +42,20 @@ class Campaign: ObservableObject {
     
     var label: String {
         urls.reduce("") { $0 + " " + $1.lastPathComponent }
+    }
+    
+    func browse() {
+        let panel = NSOpenPanel()
+        
+        panel.canChooseDirectories = true
+        panel.canChooseFiles = true
+        panel.allowsMultipleSelection = true
+        
+        let ok = panel.runModal()
+        guard ok == .OK else { return }
+        
+        self.urls = panel.urls
+        run()
     }
     
     func run() {
