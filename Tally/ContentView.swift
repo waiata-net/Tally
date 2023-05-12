@@ -11,11 +11,7 @@ struct ContentView: View {
     
     @AppStorage("campaignURL") var url: URL?
     
-    @ObservedObject var campaign: Campaign = Campaign()
-    
-    init() {
-        campaign = Campaign(url: url)
-    }
+    @StateObject var campaign = Campaign()
       
     var body: some View {
         VStack {

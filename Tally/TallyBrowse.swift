@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TallyBrowse: View {
     
-    @AppStorage("campaignURL") var url: URL?
+    @AppStorage("Campaign URL") var url: URL?
     @EnvironmentObject var campaign: Campaign
     
     var browseLabel: String {

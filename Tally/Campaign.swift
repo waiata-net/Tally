@@ -40,9 +40,7 @@ class Campaign: ObservableObject {
         tallys.map { $0.ext }.sorted()
     }
     
-    var label: String {
-        urls.reduce("") { $0 + " " + $1.lastPathComponent }
-    }
+    @Published var label: String = ""
     
     func browse() {
         let panel = NSOpenPanel()
@@ -56,6 +54,7 @@ class Campaign: ObservableObject {
         
         self.urls = panel.urls
         run()
+        UserDefaults.standard.set(panel.url, forKey: "Campaign URL")
     }
     
     func run() {
@@ -71,6 +70,7 @@ class Campaign: ObservableObject {
             
         }
         total = Read(total: tallys)
+        label = urls.reduce("") { $0 + " " + $1.lastPathComponent }
     }
     
     func read(directory: URL) {
