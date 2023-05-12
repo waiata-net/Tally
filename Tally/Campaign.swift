@@ -8,45 +8,69 @@
 import Foundation
 
 
-class Campaign {
+class Campaign: ObservableObject {
     
-    var root: URL
+    var urls = [URL]()
     
+    @Published var total = Read()
     var tallys = [Read]()
-    var total = Read()
+    
+    let fm = FileManager()
+    
+    init() {
+        
+    }
+    
+    init(url: URL?) {
+        if let url = url {
+            self.urls = [url]
+        } else {
+            self.urls = []
+        }
+        run()
+    }
+    
+    init(urls: [URL]) {
+        self.urls = urls
+        run()
+    }
     
     
-    init(root: URL) {
-        self.root = root
+    var extentions: [String] {
+        tallys.map { $0.ext }.sorted()
+    }
+    
+    var label: String {
+        urls.reduce("") { $0 + " " + $1.lastPathComponent }
     }
     
     func run() {
         
         tallys = []
         
-        let fm = FileManager()
-        
-        if root.isDirectory {
-            guard let enumerator = fm.enumerator(at: root, includingPropertiesForKeys: nil, options: .skipsHiddenFiles) else {
-                return
+        for url in urls {
+            if url.isDirectory {
+                read(directory: url)
+            } else {
+                read(file: url)
             }
-                for case let url as URL in enumerator {
-                    read(url)
-            }
-        } else {
-             read(root)
+            
         }
-        
-        total = tallys.reduce(Read(), +)
+        total = Read(total: tallys)
     }
     
-    var extentions: [String] {
-        tallys.map { $0.ext }.sorted()
+    func read(directory: URL) {
+        guard let enumerator = fm.enumerator(at: directory, includingPropertiesForKeys: nil, options: .skipsHiddenFiles) else {
+            return
+        }
+        for case let url as URL in enumerator {
+            read(file: url)
+        }
     }
     
     
-    func read(_ url: URL) {
-        let read = Read(url: url)
+    func read(file: URL) {
+        let read = Read(url: file)
         if let i = tallys.firstIndex(where: { $0.ext == read.ext }) {
             let t = tallys.remove(at: i)
             tallys.insert(t + read, at: i)
